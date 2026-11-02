@@ -1,293 +1,297 @@
-*{
-
-margin:0;
-padding:0;
-box-sizing:border-box;
-
-font-family:Montserrat,sans-serif;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
 }
 
-body{
-
-background:#0f0f0f;
-color:white;
-
+body {
+  background-color: #000;
+  color: white;
 }
 
-header{
-
-position:fixed;
-
-width:100%;
-height:80px;
-
-display:flex;
-
-justify-content:space-between;
-align-items:center;
-
-padding:0 60px;
-
-background:linear-gradient(to bottom,#000,transparent);
-
-z-index:100;
-
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  background: linear-gradient(to bottom, #000, transparent);
+  z-index: 100;
 }
 
-.logo{
-
-font-size:28px;
-font-weight:900;
-
-color:#d61f1f;
-
+.logo {
+  font-size: 28px;
+  font-weight: 900;
+  color: #f7f5f5;
+  text-decoration: none;
+  font-family: "Cinzel", serif;
 }
 
-nav{
 
-display:flex;
-gap:30px;
-
+.hero {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url("img/fundo.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-nav a{
-
-text-decoration:none;
-color:white;
-font-weight:500;
-
-transition:.3s;
-
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,.95), rgba(0,0,0,.4));
 }
 
-nav a:hover{
-
-color:#d61f1f;
-
+.conteudo {
+  position: relative;
+  padding-left: 80px;
+  max-width: 700px;
 }
 
-.perfil{
-
-display:flex;
-align-items:center;
-gap:20px;
-
+.conteudo h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+   font-family: "Cinzel", serif;
 }
 
-.perfil img{
-
-width:45px;
-height:45px;
-
-border-radius:50%;
-
+.conteudo p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 40px;
 }
 
-.hero{
-
-height:100vh;
-
-background-image:url("../assets/hero.jpg");
-background-size:cover;
-background-position:center;
-
-position:relative;
-
-display:flex;
-align-items:center;
-
+.botoes {
+  display: flex;
+  gap: 20px;
 }
 
-.overlay{
-
-position:absolute;
-
-width:100%;
-height:100%;
-
-background:linear-gradient(
-to right,
-rgba(0,0,0,.95),
-rgba(0,0,0,.4)
-);
-
+button {
+  padding: 15px 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: .3s;
 }
 
-.conteudo{
-
-position:relative;
-
-padding-left:80px;
-
-max-width:700px;
-
+.assistir {
+  background: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+   border: 1px solid #f5f5f5;
 }
 
-.conteudo h1{
-
-font-size:70px;
-margin-bottom:20px;
-
+.assistir:hover {
+  transform: scale(1.05);
+  background-color: #fafafa;
+  color: #070707;
 }
 
-.conteudo p{
-
-font-size:20px;
-
-line-height:1.6;
-
-margin-bottom:40px;
-
+main {
+  padding: 40px;
+  margin-top: -80px;
+  position: relative;
+  z-index: 10;
 }
 
-.botoes{
-
-display:flex;
-
-gap:20px;
-
+section {
+  margin-bottom: 70px;
 }
 
-button{
-
-padding:15px 40px;
-
-border:none;
-
-cursor:pointer;
-
-font-size:18px;
-
-border-radius:5px;
-
-transition:.3s;
-
+section h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
 }
 
-.assistir{
-
-background:white;
-color:black;
-
+.slider {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 20px;
 }
 
-.assistir:hover{
-
-transform:scale(1.05);
-
+.slider::-webkit-scrollbar {
+  display: none;
 }
 
-.info{
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #070707; }
+::-webkit-scrollbar-thumb { background: #fffefe; border-radius: 12px; }
 
-background:rgba(255,255,255,.2);
-
-color:white;
-
+.card-temporada1 {
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 170px;
+  margin: 10px;
+  border-radius: 8px;
+  background: #252525;
+  overflow: hidden;
+  text-decoration: none;
+  transition: .4s;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
-.info:hover{
-
-background:white;
-color:black;
-
+.card-temporada2 {
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 170px;
+  margin: 10px;
+  border-radius: 8px;
+  background: #252525;
+  overflow: hidden;
+  text-decoration: none;
+  transition: .4s;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
-main{
-
-padding:40px;
-
-margin-top:-80px;
-
-position:relative;
-
-z-index:10;
-
+.card-temporada3 {
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 170px;
+  margin: 10px;
+  border-radius: 8px;
+  background: #252525;
+  overflow: hidden;
+  text-decoration: none;
+  transition: .4s;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
-section{
-
-margin-bottom:70px;
-
+.card-temporada4 {
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 170px;
+  margin: 10px;
+  border-radius: 8px;
+  background: #252525;
+  overflow: hidden;
+  text-decoration: none;
+  transition: .4s;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
-section h2{
-
-margin-bottom:20px;
-
-font-size:30px;
-
+.card-temporada5 {
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 170px;
+  margin: 10px;
+  border-radius: 8px;
+  background: #252525;
+  overflow: hidden;
+  text-decoration: none;
+  transition: .4s;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
-.slider{
 
-display:flex;
-
-gap:20px;
-
-overflow-x:auto;
-
-padding-bottom:20px;
-
+.card-temporada1:hover {
+  box-shadow: 0 0 15px #ff8c00;
 }
 
-.slider::-webkit-scrollbar{
-
-display:none;
-
+.card-temporada2:hover {
+  box-shadow: 0 0 15px #e06d6d;
 }
 
-.card{
-
-min-width:280px;
-height:170px;
-
-border-radius:12px;
-
-background:#252525;
-
-transition:.4s;
-
-cursor:pointer;
-
+.card-temporada3:hover {
+  box-shadow: 0 0 15px rgba(2, 175, 255, 0.918);
 }
 
-.card:hover{
-
-transform:scale(1.08);
-
-box-shadow:0 0 25px rgba(214,31,31,.6);
-
+.card-temporada4:hover {
+  box-shadow: 0 0 15px #a9a9a9;
 }
 
-/* ===== RESPONSIVO ===== */
+.card-temporada5:hover {
+  box-shadow: 0 0 15px rgba(214, 31, 31, .6);
+}
 
-/* Tablets grandes / notebooks pequenos */
+.card-temporada1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card-temporada2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card-temporada3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card-temporada4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card-temporada5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.titulo-temporada {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+}
+
 @media (max-width: 1024px) {
   header {
     padding: 20px 40px;
   }
-
   .hero {
     height: 70vh;
   }
-
   .conteudo h1 {
     font-size: 2.5rem;
   }
-
   .conteudo p {
     font-size: 1rem;
     max-width: 90%;
   }
-
-  .card {
+  .card-temporada {
     width: 160px;
     height: 220px;
   }
 }
 
-/* Tablets */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -295,93 +299,71 @@ box-shadow:0 0 25px rgba(214,31,31,.6);
     gap: 15px;
     padding: 15px 20px;
   }
-
   nav {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
   }
-
   .hero {
     height: 60vh;
   }
-
   .conteudo {
     padding: 0 20px;
   }
-
   .conteudo h1 {
     font-size: 2rem;
   }
-
   .conteudo p {
     font-size: 0.9rem;
   }
-
   .botoes {
     flex-direction: column;
     width: 100%;
   }
-
   .botoes button {
     width: 100%;
   }
-
   main section {
     padding: 0 20px;
   }
-
   main h2 {
     font-size: 1.3rem;
   }
-
   .slider {
     gap: 10px;
-    overflow-x: auto;
   }
-
-  .card {
+  .card-temporada {
     width: 130px;
     height: 190px;
-    flex-shrink: 0;
   }
 }
 
-/* Celulares */
 @media (max-width: 480px) {
   .logo {
     font-size: 1.2rem;
   }
-
   nav a {
     font-size: 0.85rem;
   }
-
   .hero {
     height: 50vh;
   }
-
   .conteudo h1 {
     font-size: 1.5rem;
   }
-
   .conteudo p {
     font-size: 0.85rem;
   }
-
-  .assistir,
-  .info {
+  .assistir {
     padding: 10px 20px;
     font-size: 0.9rem;
   }
-
   main h2 {
     font-size: 1.1rem;
     padding-left: 5px;
   }
-
-  .card {
+  .card-temporada {
     width: 100px;
     height: 150px;
   }
