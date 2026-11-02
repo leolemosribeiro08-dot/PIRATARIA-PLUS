@@ -1,141 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attack on Titan</title>
+  <link rel="stylesheet" href="style.css">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Attack on Titan</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link
-href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap"
-rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
+  <header>
+    <a href="index.html" class="logo">Attack on Titan</a>
+  
+  </header>
 
-<div class="logo">
-Attack on Titan
-</div>
+  <section class="hero">
 
-<nav>
+    <div class="overlay"></div>
 
-<a href="index.html">Início</a>
-<a href="temporadas.html">Temporadas</a>
-<a href="#">Personagens</a>
-<a href="#">Cronologia</a>
+    <div class="conteudo">
+      <h1>Attack on Titan</h1>
+      <p>A humanidade vive cercada por muralhas gigantes para se proteger dos Titãs. Após um ataque devastador, Eren Yeager promete exterminar todos eles.</p>
+    
+      <div class="botoes">
+        <button class="assistir">Assistir ▶</button>
+      </div>
 
-</nav>
+    </div>
 
+  </section>
 
+  <main>
+    <section>
+      <h2>Temporadas</h2>
+      <div class="slider">
+        <a href="temporadas/T1.html" class="card-temporada1">
+          <img src="img/capa1.png" alt="Temporada 1">
+          <h3 class="titulo-temporada">Temporada 1</h3>
+        </a>
+        <a href="temporadas/T2.html" class="card-temporada2">
+          <img src="img/capa2.png" alt="Temporada 2">
+          <h3 class="titulo-temporada">Temporada 2</h3>
+        </a>
+        <a href="temporadas/T3.html" class="card-temporada3">
+          <img src="img/capa3.png" alt="Temporada 3">
+          <h3 class="titulo-temporada">Temporada 3</h3>
+        </a>
+        <a href="temporadas/T4.html" class="card-temporada4">
+          <img src="img/capa4.png" alt="Temporada 4">
+          <h3 class="titulo-temporada">Temporada 4</h3>
+        </a>
+        <a href="temporadas/T5.html" class="card-temporada5">
+          <img src="img/capaFinal.png" alt="Filme">
+          <h3 class="titulo-temporada">Filme</h3>
+        </a>
+      </div>
+    </section>
 
-</header>
-
-<section class="hero">
-
-<div class="overlay"></div>
-
-<div class="conteudo">
-
-<h1>Attack on Titan</h1>
-
-<p>
-
-A humanidade vive cercada por muralhas gigantes para se proteger dos Titãs.
-Após um ataque devastador, Eren Yeager promete exterminar todos eles.
-
-</p>
-
-<div class="botoes">
-
-<button class="assistir">
-▶ Assistir
-</button>
-
-<button class="info">
-Mais informações
-</button>
-
-</div>
-
-</div>
-
-</section>
-
-<main>
-
-<section>
- 
-<h2>Temporada 1</h2>
-
-<div class="slider">
-
-<div class="card"></div>
-<div class="card"></div>
-<div class="card"></div>
-<div class="card"></div>
-<div class="card"></div>
-<div class="card"></div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Temporada 2</h2>
-
-<div class="slider">
-
-<div class="card"></div>
-<div class="card"></div>
-<div class="card"></div>
-<div class="card"></div>
-<div class="card"></div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Temporada 3</h2>
-
-<div class="slider">
-
-<div class="card"></div>
-<div class="card"></div>
-<div class="card"></div>
-<div class="card"></div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>The Final Season</h2>
-
-<div class="slider">
-
-<div class="card"></div>
-<div class="card"></div>
-<div class="card"></div>
-<div class="card"></div>
-<div class="card"></div>
-
-</div>
-
-</section>
-
-</main>
-
-<script src="js/app.js"></script>
-
+    
+  </main>
 </body>
 </html>
